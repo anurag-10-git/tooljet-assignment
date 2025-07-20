@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+* , *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #FFFFFF;
+  background-color: #181B1F;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.horizontal-gradient-line {
+  min-height: 1px;
+  background-image: linear-gradient(to right, #181B1F, #363636, #363636, #2B292E);
+}

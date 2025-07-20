@@ -1,0 +1,74 @@
+.main-logo {
+  width: 10.7rem;
+  height: 2.4rem;
+}
+
+.navbar, .navigation-list, .navigation-list li, .login, .login > :last-child {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  min-height: 6.4rem;
+  padding-inline: 18rem;
+  position: relative;
+}
+
+.navigation-list {
+  margin-left: 4rem;
+  gap: .4rem;
+}
+
+.navigation-list li {
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 1.2rem .6rem;
+  text-transform: capitalize;
+  gap: .8rem;
+  cursor: pointer;
+}
+
+.navigation-list li a + img {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+.login {
+  margin-left: auto;
+  font-weight: 500;
+  line-height: 2rem;
+  font-size: 1.4rem;
+}
+
+.login > :first-child {
+  padding: 1rem 2rem;
+}
+
+.login > :last-child {
+  gap: .8rem;
+  background-color: #1E2226;
+  border: 1px solid #4A6DD966;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  box-shadow: 0 1px 1px 0 #3032331A, 0 0 1px 0 #3032330D;
+}
+
+/* .navbar::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 30vh;
+  top: 0;
+  left: 0;
+  background: radial-gradient(
+  circle,
+  #353197,
+  #00F0FF,
+  #FF4161,
+  #FF90BA,
+  #FFAEAE,
+  #FFB39B
+);
+} */
+

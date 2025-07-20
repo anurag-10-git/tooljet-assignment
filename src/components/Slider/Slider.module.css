@@ -1,0 +1,49 @@
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  height: 15rem;
+  width: 100%;
+}
+
+.sponsors-slider .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9.6rem;
+  min-width: 22rem;
+  opacity: 40%;
+}
+
+.sponsors-slider img {
+  height: 3.6rem;
+  width: 12.5rem;
+}
+
+.sponsors-slider {
+  white-space: nowrap;
+  animation: 20s slide infinite linear;
+}
+
+.sponsors-mask {
+  width: 76vw;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+.sponsors-slider {
+  display: flex;
+  animation: scroll var(--duration, 30s) linear infinite;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  --scroll-width: 0px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1 * var(--scroll-width)));
+  }
+}
