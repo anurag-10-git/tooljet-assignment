@@ -80,6 +80,7 @@
   background: linear-gradient(#212429, #212429) padding-box;
   outline: none;
   padding-right: 3.75rem;
+  box-shadow: 0 2px 4px 0 #3032330D, 0 0 1px 0 #3032330D;
 }
 
 .main-text-area:focus {
