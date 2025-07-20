@@ -54,21 +54,3 @@
   box-shadow: 0 1px 1px 0 #3032331A, 0 0 1px 0 #3032330D;
 }
 
-/* .navbar::before {
-  content: "";
-  position: absolute;
-  width: 100vw;
-  height: 30vh;
-  top: 0;
-  left: 0;
-  background: radial-gradient(
-  circle,
-  #353197,
-  #00F0FF,
-  #FF4161,
-  #FF90BA,
-  #FFAEAE,
-  #FFB39B
-);
-} */
-

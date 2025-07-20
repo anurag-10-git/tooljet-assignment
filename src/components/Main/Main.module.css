@@ -113,8 +113,15 @@
 .main-text-area {
   border: 1px solid #ccc;
   transition: border 0.2s;
+  color: #FAFCFF;
+  font-size: 1.6rem;
+  padding: 1.5rem;
   outline: none;
-  /* ...other styles... */
+}
+
+.main-text-area::placeholder {
+  color: #CFD3D8;
+  font-size: 1.6rem;
 }
 
 .gradient-border {
@@ -145,7 +152,7 @@
   display: flex;
   align-items: center;
   color: #888;
-  font-size: 1em;
+  font-size: 1.6rem;
   font-family: inherit;
   z-index: 2;
   user-select: none;
@@ -156,7 +163,7 @@
   background: #eee;
   border: none;
   border-radius: 4px;
-  padding: 1px 8px;
+  padding: 1px px;
   font-size: 0.9em;
   cursor: pointer;
   color: #888;
