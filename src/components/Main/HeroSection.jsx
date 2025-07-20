@@ -13,6 +13,7 @@ const HeroSection = () => {
   const [placeholderIdx, setPlaceholderIdx] = useState(0);
   const [inputValue, setInputValue] = useState('');
   const [isFocused, setIsFocused] = useState(false);
+  const [hasUsedTab, setHasUsedTab] = useState(false);
   const textareaRef = useRef(null);
 
   useEffect(() => {
@@ -24,13 +25,17 @@ const HeroSection = () => {
 
   const fillWithPlaceholder = () => {
     setInputValue(PLACEHOLDERS[placeholderIdx]);
+    setHasUsedTab(true);
     textareaRef.current && textareaRef.current.focus();
   };
 
   const handleKeyDown = (e) => {
     if (e.key === 'Tab') {
       e.preventDefault();
-      fillWithPlaceholder();
+      // Only allow tab to fill placeholder if it hasn't been used yet
+      if (!hasUsedTab) {
+        fillWithPlaceholder();
+      }
     }
     if (e.key === 'Enter' && inputValue.trim()) {
       e.preventDefault();
@@ -45,6 +50,7 @@ const HeroSection = () => {
 
   const handleSubmit = () => {
     setInputValue('');
+    setHasUsedTab(false);
   };
 
   return (

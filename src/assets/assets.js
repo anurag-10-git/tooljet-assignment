@@ -43,10 +43,10 @@ const assets = {
   //icons
   dropDownIcon,
   arrowTopRight,
+  shieldLogo,
 
   //sketch
   sketchVector,
-  shieldLogo
 }
 
 export default assets;
