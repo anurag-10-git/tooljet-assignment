@@ -22,11 +22,11 @@
 
 .vertical-lines-container span {
   height: 26.4rem;
-  width: 1px;
+  width: 0.06rem;
 }
 
 .vertical-lines-container > :nth-child(even) {
-  background: linear-gradient(to bottom, transparent, #181b1f), repeating-linear-gradient(to top, #36363600 0, #363636 10px, transparent 10px, transparent 10px);
+  background: linear-gradient(to bottom, transparent, #181b1f), repeating-linear-gradient(to top, #36363600 0, #363636 0.63rem, transparent 0.63rem, transparent 0.63rem);
 }
 
 .vertical-lines-container > :nth-child(odd) {
@@ -54,7 +54,7 @@
   color: #FAFCFF;
   background: linear-gradient(#FFFFFF, #191B1F);
   -webkit-background-clip: text;
-  -webkit-text-stroke: 1px transparent;
+  -webkit-text-stroke: 0.06rem transparent;
   line-height: 90%;
   letter-spacing: -1%;
   position: relative;
@@ -76,15 +76,15 @@
   width: 85.4rem;
   height: 18.2rem;
   resize: none;
-  border-radius: 14.5px;
+  border-radius: 0.91rem;
   background: linear-gradient(#212429, #212429) padding-box;
   outline: none;
-  padding-right: 60px;
+  padding-right: 3.75rem;
 }
 
 .main-text-area:focus {
   background: linear-gradient(#212429, #212429) padding-box, linear-gradient(to right, #FF7750, #BD5969, #4B2494) border-box;
-  border: 1.25px solid transparent;
+  border: 0.08rem solid transparent;
 }
 
 .certification {
@@ -106,12 +106,12 @@
 }
 
 .certification li span {
-  margin-top: 2px;
+  margin-top: 0.13rem;
   color: #858C94;
 }
 
 .main-text-area {
-  border: 1px solid #ccc;
+  border: 0.06rem solid #ccc;
   transition: border 0.2s;
   color: #FAFCFF;
   font-size: 1.6rem;
@@ -124,21 +124,6 @@
   font-size: 1.6rem;
 }
 
-.gradient-border {
-  border: 2px solid;
-  border-image: linear-gradient(90deg, #6a5af9, #f857a6) 1;
-}
-/* Style for submit button */
-.submit-btn {
-  margin-top: 8px;
-  padding: 8px 16px;
-  background: linear-gradient(90deg, #6a5af9, #f857a6);
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
 .textarea-container {
   position: relative;
   width: 85.4rem;
@@ -146,8 +131,8 @@
 
 .custom-placeholder {
   position: absolute;
-  left: 16px;
-  top: 16px;
+  left: 1rem;
+  top: 1rem;
   pointer-events: none;
   display: flex;
   align-items: center;
@@ -159,32 +144,32 @@
 }
 
 .tab-btn {
-  margin-left: 8px;
-  background: #eee;
-  border: none;
-  border-radius: 4px;
-  padding: 1px px;
-  font-size: 0.9em;
+  margin-left: 0.5rem;
+  background: transparent;
+  border: 1px solid #545B64;
+  border-radius: 0.25rem;
+  padding: 1px 8px;
+  font-size: 1.4rem;
   cursor: pointer;
-  color: #888;
+  color: #CFD3D8;
   pointer-events: auto;
 }
 
 .floating-submit-btn {
   position: absolute;
-  right: 16px;
-  bottom: 12px;
-  background: #4f46e5;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  background: #4368E3;
   color: #fff;
   border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  border-radius: 8px;
+  height: 3.6rem;
+  width: 3.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  font-size: 1.3em;
+  box-shadow: 0 0.13rem 0.5rem rgba(0,0,0,0.15);
+  font-size: 2rem;
   cursor: pointer;
   z-index: 3;
   transition: background 0.2s;

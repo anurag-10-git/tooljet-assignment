@@ -44,8 +44,6 @@ const HeroSection = () => {
   const handleBlur = () => setIsFocused(false);
 
   const handleSubmit = () => {
-    // Replace with your submit logic
-    alert(`Submitted: ${inputValue}`);
     setInputValue('');
   };
 
@@ -79,7 +77,6 @@ const HeroSection = () => {
                 type="button"
                 tabIndex={-1}
                 className={classes['tab-btn']}
-                aria-label="Fill with placeholder"
                 onClick={e => {
                   e.preventDefault();
                   fillWithPlaceholder();
