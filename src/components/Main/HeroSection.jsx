@@ -32,7 +32,7 @@ const HeroSection = () => {
   const handleKeyDown = (e) => {
     if (e.key === 'Tab') {
       e.preventDefault();
-      // Only allow tab to fill placeholder if it hasn't been used yet
+
       if (!hasUsedTab) {
         fillWithPlaceholder();
       }
@@ -75,7 +75,6 @@ const HeroSection = () => {
             onKeyDown={handleKeyDown}
             rows={3}
           />
-          {/* Custom placeholder with integrated tab button */}
           {!inputValue && (
             <div className={classes['custom-placeholder']}>
               <span>{PLACEHOLDERS[placeholderIdx]}</span>
@@ -92,7 +91,6 @@ const HeroSection = () => {
               </button>
             </div>
           )}
-          {/* Submit button at bottom right */}
           {inputValue.trim() && (
             <button
               type="submit"
