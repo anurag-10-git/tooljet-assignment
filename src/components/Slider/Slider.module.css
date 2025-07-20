@@ -1,7 +1,7 @@
 .sponsors {
   display: flex;
   flex-direction: column;
-  height: 15rem;
+  height: 18rem;
   width: 100%;
 }
 
@@ -12,12 +12,37 @@
   height: 9.6rem;
   min-width: 22rem;
   opacity: 40%;
+  position: relative;
 }
 
 .sponsors-slider img {
   height: 3.6rem;
   width: 12.5rem;
   cursor: pointer;
+}
+
+.case-study-btn {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+.case-study-btn:hover {
+  background-color: #444444;
 }
 
 .sponsors-slider:hover {
